@@ -14,5 +14,5 @@
   --color-white-600: oklch(0.8 0.02 270);
   --color-white-500: oklch(0.7 0.02 270);
 
-  /* --font-generalsans: "General Sans, sans-serif"; */
+  --font-generalsans: "General Sans", "sans-serif";
 }
