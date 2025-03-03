@@ -1,1 +1,18 @@
-@import "tailwindcss";
+@import "tailwindcss";  
+
+@theme {     
+  --color-black-default: oklch(0 0 0); 
+  --color-black-100: oklch(0.12 0.01 270);
+  --color-black-200: oklch(0.15 0.01 270);
+  --color-black-300: oklch(0.2 0.01 270);
+  --color-black-500: oklch(0.3 0.02 270);
+  --color-black-600: oklch(0.15 0.02 270);
+
+  --color-white-default: oklch(1 0 0);  
+  --color-white-800: oklch(0.92 0.02 270);
+  --color-white-700: oklch(0.87 0.02 270);
+  --color-white-600: oklch(0.8 0.02 270);
+  --color-white-500: oklch(0.7 0.02 270);
+
+  /* --font-generalsans: "General Sans, sans-serif"; */
+}
