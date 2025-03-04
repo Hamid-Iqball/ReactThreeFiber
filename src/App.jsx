@@ -1,9 +1,11 @@
 import React from 'react'
+import Navbar from './sections/Navbar'
 
 function App() {
   return (
     <main>
-      <h1 className='bg-black-500 text-white-800'>hey ther</h1>
+      
+    <Navbar/>
     </main>
   )
 }
