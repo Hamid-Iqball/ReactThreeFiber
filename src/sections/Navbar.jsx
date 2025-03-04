@@ -36,7 +36,7 @@ function Navbar() {
             className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex" 
             aria-label="Toggle menu"
           >
-            {/* Using text fallback in case images don't load */}
+            
             {isOpen ? (
               <img src="/assets/close.svg" alt="Close" className="w-6 h-6" />
             ) : (
