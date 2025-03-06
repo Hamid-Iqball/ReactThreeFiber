@@ -59,9 +59,9 @@ function Hero() {
           <Suspense fallback={<CanvasLoader/>}>
             <PerspectiveCamera makeDefault position={[0,0,30]}/>
             <HackerRoom
-             rotation={[x.rotationX,x.rotationY,x.rotationZ]}
-             position={[x.positionX,x.positionY,x.positionZ]}
-             scale={[x.scale,x.scale,x.scale]}
+             rotation={[0.2,-3.2,0]}
+             position={[-1.0,-9.7,1.9]}
+             scale={0.1}
            
              />
             <ambientLight intensity={1}/>
