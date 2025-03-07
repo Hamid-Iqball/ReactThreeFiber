@@ -67,7 +67,7 @@ function Hero() {
             <PerspectiveCamera makeDefault position={[0,0,30]}/>
             <HackerRoom
              rotation={[0.2,-3.2,0]}
-             position={[-1.0,-9.4,1.9]}
+             position={[-0.5,-9.8,1.9]}
              scale={isMobile?0.09:0.1}
            
              />
