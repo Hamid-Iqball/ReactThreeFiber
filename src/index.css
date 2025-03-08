@@ -31,7 +31,7 @@ body {
 
 body {
   background: #010103;
-  font-family: 'General Sans', sans-serif;
+  font-family: 'General Sans', sans-serif !important;
 }
 
 /* Global spacing utility */
