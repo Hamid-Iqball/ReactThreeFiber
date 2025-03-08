@@ -27,11 +27,12 @@ body {
 
 * {
   scroll-behavior: smooth;
+  font-family:"Poppins";
 }
 
 body {
   background: #010103;
-  font-family: 'General Sans', sans-serif !important;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Global spacing utility */
@@ -41,7 +42,8 @@ body {
 
 /* Typography */
 .head-text {
-  @apply sm:text-4xl text-3xl font-semibold text-transparent bg-gradient-to-r from-[#BEC1CF] via-[#D5D8EA] to-[#D5D8EA] bg-clip-text;
+  font-family: "Poppins" sans-serif;
+  @apply sm:text-4xl text-3xl font-semibold text-transparent bg-gradient-to-r from-[#BEC1CF] via-[#D5D8EA] to-[#D5D8EA] bg-clip-text ;
 }
 
 /* Navbar */
@@ -63,7 +65,7 @@ body {
 
 /* Button */
 .btn {
-  @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black/60 transition-all active:scale-95 text-white mx-auto;
+  @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#1C1C21] w-lg transition-all active:scale-95 text-white mx-auto;
 }
 
 .btn-ping {
