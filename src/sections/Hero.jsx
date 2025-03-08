@@ -38,7 +38,7 @@ function Hero() {
              />
 
              <group>
-              <Target position={sizes.targetPosition}/>
+              <Target position={sizes.targetPosition} rotation={[0,Math.PI/5, 0]}/>
              </group>
             <ambientLight intensity={1}/>
             <directionalLight position={[10,10,10]} intensity={0.5}/>
