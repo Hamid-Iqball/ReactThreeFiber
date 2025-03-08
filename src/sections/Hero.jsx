@@ -7,45 +7,10 @@ import CanvasLoader from '../components/CanvasLoader'
 import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants'
+import Target from '../components/Target'
 
 function Hero() {
-  const x = useControls("HackerRoom", {
-    positionX:{
-      value:2.5,
-      min:-10,
-      max:10
-    },
-    positionY:{
-      value:2.5,
-      min:-10,
-      max:10
-    },
-    positionZ:{
-      value:2.5,
-      min:-10,
-      max:10
-    },
-    rotationX:{
-      value:0,
-      min:-10,
-      max:10
-    },
-    rotationY:{
-      value:0,
-      min:-10,
-      max:10
-    },
-    rotationZ:{
-      value:0,
-      min:-10,
-      max:10
-    },
-    scale:{
-      value:1,
-      min:0.1,
-      max:10
-    }
-  })
+ 
   const isSmall = useMediaQuery({maxWidth:480})
   const isMobile = useMediaQuery({maxWidth:768})
   const isTalet = useMediaQuery({minWidth:768, maxWidth:1024})
@@ -61,16 +26,20 @@ function Hero() {
         </div>
 
         <div className='w-full h-full absolute inset-0'>
-          <Leva/>
+          {/* <Leva/> */}
           <Canvas className='w-full h-full'>
           <Suspense fallback={<CanvasLoader/>}>
-            <PerspectiveCamera makeDefault position={[0,0,30]}/>
+            <PerspectiveCamera makeDefault position={[0,0,20]}/>
             <HackerRoom
-             rotation={[0.2,-3.2,0]}
-             position={[-0.5,-9.8,1.9]}
-             scale={isMobile?0.09:0.1}
+             rotation={[0,-Math.PI,0]}
+             position={sizes.deskPosition}
+             scale={sizes.deskScale}
            
              />
+
+             <group>
+              <Target position={sizes.targetPosition}/>
+             </group>
             <ambientLight intensity={1}/>
             <directionalLight position={[10,10,10]} intensity={0.5}/>
           </Suspense> 
